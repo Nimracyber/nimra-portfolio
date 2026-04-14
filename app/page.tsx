@@ -37,7 +37,7 @@ export default function Home() {
             About Me
             <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
           </h2>
-          <p className="text-center max-w-3xl mx-auto">
+          <p className="text-bold-center max-w-3xl mx-auto">
             Hello! I am Nimra Farooqi, a passionate professional with a Master's in Mathematics
             and certifications in Data Analytics, Digital Marketing, AI, and Robotics. I love
             combining analytical thinking, creativity, and technology to solve real-world problems.
