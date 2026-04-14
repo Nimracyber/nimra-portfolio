@@ -1,65 +1,150 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 text-gray-800 scroll-smooth">
+      
+      {/* Navbar */}
+      <nav className="flex justify-between items-center px-6 md:px-12 py-5 bg-white/90 backdrop-blur-md sticky top-0 shadow-md z-50">
+        <h2 className="text-2xl font-bold text-pink-600">Personal Portfolio</h2>
+        <ul className="flex gap-5 text-sm md:text-base font-medium">
+          <li><a href="#about" className="hover:text-pink-600 transition">About</a></li>
+          <li><a href="#skills" className="hover:text-pink-600 transition">Skills</a></li>
+          <li><a href="#projects" className="hover:text-pink-600 transition">Projects</a></li>
+          <li><a href="#resume" className="hover:text-pink-600 transition">Resume</a></li>
+          <li><a href="#contact" className="hover:text-pink-600 transition">Contact</a></li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="h-screen flex flex-col justify-center items-center text-center px-5 animate-fadeIn">
+        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text text-transparent">
+          Nimra Farooqi
+        </h1>
+        <p className="mt-4 text-lg max-w-2xl">
+          Master&apos;s in Mathematics | Data Analyst | Digital Marketer | AI & Robotics Enthusiast
+        </p>
+        <a
+          href="#contact"
+          className="mt-6 px-6 py-3 rounded-full text-white bg-gradient-to-r from-pink-600 to-purple-700 shadow-lg hover:scale-105 transition"
+        >
+          Hire Me
+        </a>
+      </section>
+
+      {/* About */}
+      <section id="about" className="px-6 md:px-20 py-16">
+        <div className="bg-white rounded-2xl p-10 shadow-lg">
+          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-6 relative">
+            About Me
+            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
+          </h2>
+          <p className="text-center max-w-3xl mx-auto">
+            Hello! I am Nimra Farooqi, a passionate professional with a Master's in Mathematics
+            and certifications in Data Analytics, Digital Marketing, AI, and Robotics. I love
+            combining analytical thinking, creativity, and technology to solve real-world problems.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="px-6 md:px-20 py-16">
+        <div className="bg-white rounded-2xl p-10 shadow-lg">
+          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
+            My Skills
+            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              "Data Analytics",
+              "Python & SQL",
+              "Digital Marketing",
+              "AI & Robotics",
+              "Problem Solving",
+              "Mathematics & Statistics",
+            ].map((skill, i) => (
+              <div
+                key={i}
+                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="px-6 md:px-20 py-16">
+        <div className="bg-white rounded-2xl p-10 shadow-lg">
+          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
+            Projects
+            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              "Analytics Dashboard Project",
+              "Marketing Campaign Strategy",
+              "AI Learning Project",
+            ].map((project, i) => (
+              <div
+                key={i}
+                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
+              >
+                {project}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Resume */}
+      <section id="resume" className="px-6 md:px-20 py-16">
+        <div className="bg-white rounded-2xl p-10 shadow-lg">
+          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
+            Resume Highlights
+            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              "Master's in Mathematics",
+              "Certified Data Analyst",
+              "Digital Marketing Expert",
+              "AI & Robotics Certified",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="px-6 md:px-20 py-16">
+        <div className="bg-white rounded-2xl p-10 shadow-lg text-center">
+          <h2 className="text-3xl font-semibold text-purple-700 mb-6">
+            Contact Me
+            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
+          </h2>
+          <p>Email: nimrafarooqi46@gmail.com</p>
+
+          <div className="mt-6 flex justify-center gap-6 text-2xl text-pink-600">
+            <a href="#" className="hover:text-purple-700 transition">📧</a>
+            <a href="#" className="hover:text-purple-700 transition">💻</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-5 bg-pink-500 text-white mt-10">
+        <p>© 2026 Nimra Farooqi | Driven by Mathematics, Powered by Data</p>
+      </footer>
+
+    </main>
   );
 }
