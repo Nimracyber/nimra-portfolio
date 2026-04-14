@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="h-screen flex flex-col justify-center items-center text-center px-5 animate-fadeIn">
         <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text text-transparent">
-          Nimra Farooqi
+          Nimra Farooqi 
         </h1>
         <p className="mt-4 text-lg max-w-2xl">
           Master&apos;s in Mathematics | Data Analyst | Digital Marketer | AI & Robotics Enthusiast
@@ -77,7 +77,7 @@ export default function Home() {
       <section id="projects" className="px-6 md:px-20 py-16">
         <div className="bg-white rounded-2xl p-10 shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
-            Projects
+            Projects 1
             <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
           </h2>
 
