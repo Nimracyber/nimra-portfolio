@@ -77,7 +77,7 @@ export default function Home() {
       <section id="projects" className="px-6 md:px-20 py-16">
         <div className="bg-white rounded-2xl p-10 shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
-            Projects 1
+            Projects
             <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
           </h2>
 
