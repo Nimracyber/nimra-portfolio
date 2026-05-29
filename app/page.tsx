@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default function Home() {
+  // Production-safe high-quality vector illustration strings
+  const professionalHeroAvatar = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%23112e42'/><circle cx='50' cy='40' r='18' fill='%2300abf0'/><path d='M25 80c0-15 10-22 25-22s25 7 25 22z' fill='%2300abf0'/><circle cx='50' cy='40' r='14' fill='%23edd4c2'/><path d='M38 40q12 5 24 0' fill='none' stroke='%23081b29' stroke-width='1.5'/><path d='M35 34h8m14 0h8' fill='none' stroke='%23081b29' stroke-width='1.5'/><path d='M30 38c3-15 37-15 40 0z' fill='%23081b29'/><path d='M42 58v10l8 4 8-4V58z' fill='%23081b29'/><path d='M32 68l10-4 8 10 8-10 10 4v12H32z' fill='%23081b29'/></svg>";
+  
+  const professionalAboutAvatar = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%23081b29'/><path d='M20 30h60v50H20z' fill='none' stroke='%2300abf0' stroke-width='2'/><path d='M30 45h40M30 55h30M30 65h20' stroke='%2300abf0' stroke-width='2' stroke-linecap='round'/><circle cx='70' cy='65' r='8' fill='%2300efff'/></svg>";
+
   return (
     <div className="bg-[#081b29] text-[#edd4c2] font-sans antialiased min-h-screen selection:bg-cyan-500 selection:text-black">
       
@@ -29,88 +34,3 @@ export default function Home() {
             <p className="text-[#edd4c2]/80 leading-relaxed text-base">
               A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about turning complex datasets and mathematical concepts into smart, automated systems and impactful data-driven web solutions.
             </p>
-            <div className="flex space-x-4 pt-4">
-              <a href="mailto:nimrafarooqi46@gmail.com" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 shadow-[0_0_15px_#00abf0]"><i className="fas fa-envelope text-lg"></i></a>
-              <a href="#" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300"><i className="fab fa-linkedin-in text-lg"></i></a>
-              <a href="#" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300"><i className="fab fa-github text-lg"></i></a>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] overflow-hidden bg-[#112e42]">
-              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Nimra" alt="Nimra Portfolio Illustration" className="w-full h-full p-4 object-contain" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section id="about" className="py-24 bg-[#112e42] px-6 border-t border-b border-[#00abf0]/10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center">
-            <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] overflow-hidden shadow-xl bg-[#081b29]">
-              <img src="https://api.dicebear.com/7.x/identicon/svg?seed=NimraData" alt="About Nimra Illustration" className="w-full h-full p-8 object-contain" />
-            </div>
-          </div>
-          <div className="space-y-6">
-            <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span className="text-[#00abf0]">Me</span></h2>
-            <p className="text-white leading-relaxed">
-              As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across elite skill development initiatives equips me with expertise spanning data architecture, pipeline optimization, and AI solution prototyping.
-            </p>
-            <p className="text-white leading-relaxed">
-              Beyond analytical tasks, I bring hands-on experience handling complex operational datasets safely and systematically, drawing from practical field operations with the International Research Force (IRF) in Islamabad.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* EDUCATION & EXPERIENCE TIMELINE SECTION */}
-      <section id="education" className="py-24 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-white mb-16">My <span className="text-[#00abf0]">Journey</span></h2>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Academic Background Journey */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-graduation-cap text-[#00abf0] mr-3"></i>Education</h3>
-            <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
-              <div className="relative">
-                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-[#00abf0] font-mono font-bold">Post-Graduation</span>
-                <h4 className="text-xl font-bold text-white mt-1">M.Sc. Mathematics</h4>
-                <p className="text-gray-400 text-sm mt-1">Advanced analytical reasoning, quantitative modeling, and structural logic application.</p>
-              </div>
-              <div className="relative">
-                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-[#00abf0] font-mono font-bold">Bachelors Degree</span>
-                <h4 className="text-xl font-bold text-white mt-1">B.Sc (Double Math Physics)</h4>
-                <p className="text-gray-400 text-sm mt-1">Foundational principles in computational mathematics and theoretical physical systems.</p>
-              </div>
-              <div className="relative">
-                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-[#00abf0] font-mono font-bold">Intermediate</span>
-                <h4 className="text-xl font-bold text-white mt-1">F.Sc (Pre-Engineering)</h4>
-                <p className="text-gray-400 text-sm mt-1">Core foundations in physical science, complex calculations, and engineering metrics.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Professional Experience & Trainings Journey */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-briefcase text-[#00abf0] mr-3"></i>Experience & Certifications</h3>
-            <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
-              <div className="relative">
-                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-emerald-400 font-mono font-bold">Field Experience</span>
-                <h4 className="text-xl font-bold text-white mt-1">Field Researcher</h4>
-                <p className="text-[#00abf0] text-sm font-medium">International Research Force (IRF), Islamabad</p>
-                <p className="text-gray-400 text-sm mt-1">Executing rigorous data collection paradigms, managing structural records, and implementing precise field operational protocols.</p>
-              </div>
-              <div className="relative">
-                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-[#00abf0] font-mono font-bold">Elite Training Certifications</span>
-                <h4 className="text-xl font-bold text-white mt-1">Advanced Technology Programs</h4>
-                <ul className="text-gray-400 text-sm mt-2 space-y-2 list-disc list-inside">
-                  <li>Artificial Intelligence & Robotics — <span className="text-white">NAVTTC Centre of Excellence, Islamabad</span></li>
-                  <li>Advanced Data Analytics — <span className="text-white">Chief Minister Punjab Skill Development Initiative</span></li>
-                  <li>Artificial Intelligence & Python — <span className="text-white">DigiSkills Training Program</span></li>
-                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills Training Program</span></li>
-                  <li>Certified Freelancing & MS Office Suite — <span className="text-
