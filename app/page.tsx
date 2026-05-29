@@ -22,22 +22,15 @@ export default function Home() {
       <section id="home" className="min-h-screen flex items-center pt-20 px-6 max-w-6xl mx-auto smooth-scroll">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
           <div className="order-2 md:order-1 space-y-6">
-            <h3 className="text-xl font-medium tracking-wide">Hello, I'm</h3>
+            <h3 className="text-xl font-medium tracking-wide">Hello, {"I'm"}</h3>
             <h1 className="text-6xl md:text-7xl font-bold tracking-tight">Nimra Farooqi</h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-white">
-              And I'm An <span className="text-cyan-400 border-r-2 border-cyan-400 pr-1 animate-pulse">AI & Data Professional</span>
+              And {"I'm"} An <span className="text-cyan-400 border-r-2 border-cyan-400 pr-1 animate-pulse">AI & Data Professional</span>
             </h2>
             <p className="text-gray-400 leading-relaxed text-base max-w-lg">
               A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about leveraging quantitative analytics and machine learning tools to build high-performance data pipelines and computational systems.
             </p>
-            
-            {/* Displaying Email Explicitly in Hero Section */}
-            <div className="flex items-center space-x-3 text-cyan-400 font-mono text-sm pt-2">
-              <i className="fas fa-envelope text-base"></i>
-              <span>nimrafarooqi46@gmail.com</span>
-            </div>
-
-            <div className="flex space-x-4 pt-2">
+            <div className="flex space-x-4 pt-4">
               <a href="mailto:nimrafarooqi46@gmail.com" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fas fa-envelope"></i></a>
               <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-linkedin-in"></i></a>
               <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-github"></i></a>
@@ -69,4 +62,145 @@ export default function Home() {
             </p>
             <div className="flex space-x-12 pt-4">
               <div>
-                <span className="text-4xl font-extrabold text-cyan-40
+                <span className="text-4xl font-extrabold text-cyan-400">6+</span>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mt-1">Certifications</p>
+              </div>
+              <div>
+                <span className="text-4xl font-extrabold text-cyan-400">15+</span>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mt-1">Core Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EDUCATION & EXPERIENCE SECTION */}
+      <section id="skills" className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold inline-block border-b-2 border-cyan-400 pb-2 tracking-wide">Education & Experience</h2>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* LEFT SIDE: ACADEMICS & TECHNICAL CERTIFICATIONS */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold text-cyan-400 mb-4">Academic Profile</h3>
+              <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-6">
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Graduation</span>
+                  <h4 className="text-lg font-semibold mt-1">M.Sc. Mathematics</h4>
+                  <p className="text-gray-400 text-xs">Advanced structural analysis and logic application.</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Bachelors</span>
+                  <h4 className="text-lg font-semibold mt-1">B.Sc (Double Math Physics)</h4>
+                  <p className="text-gray-400 text-xs">Computational mathematical systems and modeling principles.</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Intermediate</span>
+                  <h4 className="text-lg font-semibold mt-1">F.Sc (Pre-Engineering)</h4>
+                  <p className="text-gray-400 text-xs">Core foundations in physical science and calculations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-cyan-400 mb-4">Technical Certifications</h3>
+              <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-4">
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">Artificial Intelligence & Robotics</h4>
+                  <p className="text-gray-400 text-xs">NAVTTC Centre of Excellence, Islamabad</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">Advanced Data Analytics</h4>
+                  <p className="text-gray-400 text-xs">Chief Minister Punjab Skill Development Initiative</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">Artificial Intelligence & Python</h4>
+                  <p className="text-gray-400 text-xs">DigiSkills Training Program ({"PM's"} Initiative)</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">SEO (Search Engine Optimization)</h4>
+                  <p className="text-gray-400 text-xs">DigiSkills Training Program ({"PM's"} Initiative)</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">Certified Freelancing Professional</h4>
+                  <p className="text-gray-400 text-xs">Professional Freelancing Training Program</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                  <h4 className="text-sm font-semibold">Certificate in MS Office Suite</h4>
+                  <p className="text-gray-400 text-xs">Professional Freelancing Training Program</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE: PRACTICAL EXPERIENCE CARDS */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Job Experiences</h3>
+            <div className="bg-[#0f052b] p-6 rounded-xl border border-gray-800 shadow-lg flex items-start space-x-4">
+              <div className="bg-cyan-400/10 text-cyan-400 p-3 rounded-lg">
+                <i className="fas fa-search-location text-xl"></i>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold">Field Researcher</h4>
+                <p className="text-cyan-400 text-sm font-medium">International Research Force (IRF)</p>
+                <p className="text-gray-400 text-xs mt-1">Islamabad, Pakistan</p>
+                <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                  Executing rigorous data collection paradigms, managing structural records cleanly, and implementing precise field operational protocols systematically.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE SECTION */}
+      <section id="services" className="py-24 bg-gradient-to-b from-[#0f052b] to-[#09011a] px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold inline-block border-b-2 border-cyan-400 pb-2 tracking-wide mb-16">SERVICES</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">AI & Python Solutions</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Building intelligent computer vision solutions and custom automated models engineered with python architectures.
+              </p>
+            </div>
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">Data Science Pipelines</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Extracting core statistical insights and engineering data-driven platforms native to mathematical theories.
+              </p>
+            </div>
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">Technical SEO & Audits</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Optimizing discoverability footprint structures and handling organic page optimization algorithms effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT BANNER */}
+      <section id="contact" className="py-20 border-t border-gray-800 text-center px-6">
+        <h2 className="text-4xl font-extrabold tracking-tight mb-4">Turn Your Vision Into Reality</h2>
+        <p className="text-gray-400 max-w-lg mx-auto text-sm mb-6">
+          Leverage specialized data frameworks and computational expertise to accelerate your organizational growth objectives.
+        </p>
+        <a href="mailto:nimrafarooqi46@gmail.com" className="bg-cyan-400 text-[#09011a] px-8 py-3 rounded-full font-bold shadow-lg shadow-cyan-400/20 hover:bg-white hover:scale-105 transition-all inline-block">
+          Contact Me
+        </a>
+      </section>
+    </div>
+  );
+}
