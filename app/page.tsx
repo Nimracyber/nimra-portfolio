@@ -11,7 +11,7 @@ export default function Home() {
       margin: 0,
       padding: 0
     }}>
-      {/* Dynamic Background Grid Pattern */}
+      {/* Background Accent Grid */}
       <div style={{
         position: 'absolute',
         top: 0,
@@ -24,7 +24,7 @@ export default function Home() {
         zIndex: 1
       }} />
 
-      {/* Modern Top Navigation Bar */}
+      {/* Navigation Bar */}
       <nav style={{
         position: 'sticky',
         top: 0,
@@ -34,7 +34,7 @@ export default function Home() {
         zIndex: 100,
         padding: '1.25rem 2rem'
       }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyBetween: 'space-between', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '1.5rem', fontWeight: '800', letterSpacing: '0.5px', color: '#38bdf8' }}>
             NIMRA<span style={{ color: '#6366f1' }}>.</span>
           </span>
@@ -47,10 +47,10 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Main Container */}
+      {/* Main Content Area */}
       <main style={{ maxWidth: '1100px', margin: '0 auto', padding: '6rem 2rem', position: 'relative', zIndex: 2 }}>
         
-        {/* HERO HEADER SECTION */}
+        {/* About / Hero Section */}
         <section id="about" style={{ marginBottom: '8rem' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: 'rgba(99, 102, 241, 0.1)', border: '1px solid rgba(99, 102, 241, 0.2)', color: '#818cf8', padding: '0.4rem 1rem', borderRadius: '9999px', fontSize: '0.85rem', fontWeight: '600', marginBottom: '2rem' }}>
             <span style={{ width: '6px', height: '6px', backgroundColor: '#818cf8', borderRadius: '50%', display: 'inline-block' }}></span>
@@ -58,28 +58,25 @@ export default function Home() {
           </div>
           
           <h1 style={{ fontSize: '4.5rem', fontWeight: '900', letterSpacing: '-0.05em', marginBottom: '1.5rem', lineHeight: '1.1' }}>
-            Hi, I'm <span style={{ background: 'linear-gradient(to right, #38bdf8, #6366f1, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Nimra Farooqi</span> [cite: 4, 5, 6]
+            Hi, I'm <span style={{ background: 'linear-gradient(to right, #38bdf8, #6366f1, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Nimra Farooqi</span>
           </h1>
           
           <h2 style={{ fontSize: '2rem', fontWeight: '600', color: '#9ca3af', marginBottom: '2rem', letterSpacing: '-0.02em' }}>
-            Mathematics Graduate &amp; AI Engineer [cite: 18]
+            Mathematics Graduate &amp; AI Specialist [cite: 18]
           </h2>
           
           <p style={{ fontSize: '1.2rem', color: '#9ca3af', maxWidth: '750px', marginBottom: '3.5rem', lineHeight: '1.8' }}>
-            A data-driven specialist leveraging an advanced background in mathematics to design intelligent computer vision workflows, structural analytics engines, and robust AI architectures[cite: 18, 20]. Trained through top-tier national technical program initiatives[cite: 18].
+            A data-driven specialist leveraging an advanced background in mathematics to design intelligent workflows, structural analytics engines, and robust computing architectures[cite: 18, 20]. Trained through top-tier national technical program initiatives[cite: 18].
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.25rem' }}>
-            <a href="mailto:your-email@example.com" style={{ backgroundColor: '#ffffff', color: '#030712', padding: '0.9rem 2.25rem', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.95rem', boxShadow: '0 4px 20px rgba(255,255,255,0.1)' }}>
-              Contact Me
-            </a>
-            <a href="#skills" style={{ backgroundColor: '#111827', color: '#f3f4f6', border: '1px solid #374151', padding: '0.9rem 2.25rem', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.95rem' }}>
+            <a href="#skills" style={{ backgroundColor: '#ffffff', color: '#030712', padding: '0.9rem 2.25rem', borderRadius: '8px', textDecoration: 'none', fontWeight: '600', fontSize: '0.95rem', boxShadow: '0 4px 20px rgba(255,255,255,0.1)' }}>
               Explore Stack
             </a>
           </div>
         </section>
 
-        {/* TECHNICAL STACK & CERTIFICATIONS */}
+        {/* Skills & Fields Section */}
         <section id="skills" style={{ marginBottom: '8rem' }}>
           <div style={{ marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '1.75rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>Core Capabilities</h2>
@@ -103,26 +100,26 @@ export default function Home() {
               <div style={{ color: '#6366f1', fontSize: '1.5rem', marginBottom: '1.25rem' }}>🌐</div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1rem' }}>Digital Ecosystems</h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                {['SEO Optimization', 'MS Office Suite', 'Freelancing Frameworks', 'Data Verification'].map(s => (
+                {['SEO Optimization', 'MS Office Suite', 'Freelancing Frameworks', 'Research Data'].map(s => (
                   <span key={s} style={{ backgroundColor: '#111827', border: '1px solid #374151', color: '#d1d5db', padding: '0.35rem 0.75rem', borderRadius: '6px', fontSize: '0.85rem' }}>{s}</span>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Credentials Bar */}
+          {/* Certifications Bar */}
           <div style={{ backgroundColor: '#090d16', border: '1px solid #1f2937', borderRadius: '12px', padding: '2.5rem' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: '600', color: '#9ca3af', marginBottom: '1.5rem', letterSpacing: '0.5px' }}>VERIFIED CERTIFICATIONS</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', fontSize: '0.9rem', color: '#d1d5db' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>AI &amp; Robotics (NAVTTC CoE)</span></div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>Advanced Data Analytics (CM Punjab)</span></div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>AI &amp; Python (DigiSkills)</span></div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>SEO Certification (DigiSkills)</span></div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>AI &amp; Robotics — NAVTTC CoE</span></div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>Advanced Data Analytics — CM Punjab Initiative</span></div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>AI &amp; Python — DigiSkills</span></div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✨ <span>SEO Certification — DigiSkills</span></div>
             </div>
           </div>
         </section>
 
-        {/* TIMELINE SECTION FOR EDUCATION */}
+        {/* Education Timeline */}
         <section id="education" style={{ marginBottom: '8rem' }}>
           <div style={{ marginBottom: '4rem' }}>
             <h2 style={{ fontSize: '1.75rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>Academic Roadmap</h2>
@@ -130,60 +127,59 @@ export default function Home() {
           </div>
 
           <div style={{ position: 'relative', borderLeft: '1px solid #1f2937', paddingLeft: '2.5rem', marginLeft: '0.5rem' }}>
-            {/* Degree 1 */}
+            {/* M.Sc */}
             <div style={{ marginBottom: '3.5rem', position: 'relative' }}>
               <div style={{ position: 'absolute', width: '11px', height: '11px', backgroundColor: '#38bdf8', borderRadius: '50%', left: '-46px', top: '6px', border: '4px solid #030712' }} />
-              <div style={{ color: '#38bdf8', fontWeight: '600', fontSize: '0.85rem', marginBottom: '0.5rem', letterSpacing: '1px' }}>POSTGRADUATE HIGHLIGHT</div>
-              <h3 style={{ fontSize: '1.35rem', fontWeight: '700', marginBottom: '0.25rem' }}>M.Sc. Mathematics </h3>
-              <p style={{ color: '#9ca3af', margin: 0, fontSize: '1rem' }}>University of Gujrat </p>
+              <div style={{ color: '#38bdf8', fontWeight: '600', fontSize: '0.85rem', marginBottom: '0.5rem', letterSpacing: '1px' }}>POSTGRADUATE PROFILE</div>
+              <h3 style={{ fontSize: '1.35rem', fontWeight: '700', marginBottom: '0.25rem' }}>M.Sc. Mathematics [cite: 23]</h3>
             </div>
 
-            {/* Degree 2 */}
+            {/* B.Sc */}
             <div style={{ marginBottom: '3.5rem', position: 'relative' }}>
               <div style={{ position: 'absolute', width: '11px', height: '11px', backgroundColor: '#4b5563', borderRadius: '50%', left: '-46px', top: '6px', border: '4px solid #030712' }} />
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.25rem', color: '#e5e7eb' }}>B.Sc. (Double Mathematics &amp; Physics) [cite: 25]</h3>
-              <p style={{ color: '#6b7280', margin: 0, fontSize: '0.95rem' }}>Undergraduate Program </p>
+              <p style={{ color: '#6b7280', margin: 0, fontSize: '0.95rem' }}>Undergraduate Qualification [cite: 24]</p>
             </div>
 
-            {/* Degree 3 */}
+            {/* F.Sc */}
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', width: '11px', height: '11px', backgroundColor: '#4b5563', borderRadius: '50%', left: '-46px', top: '6px', border: '4px solid #030712' }} />
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.25rem', color: '#e5e7eb' }}>F.Sc. (Pre-Engineering) [cite: 27]</h3>
-              <p style={{ color: '#6b7280', margin: 0, fontSize: '0.95rem' }}>Intermediate Certification </p>
+              <p style={{ color: '#6b7280', margin: 0, fontSize: '0.95rem' }}>Intermediate Certification [cite: 26]</p>
             </div>
           </div>
         </section>
 
-        {/* PROFESSIONAL WORK EXPERIENCE */}
+        {/* Experience Section */}
         <section id="experience" style={{ marginBottom: '6rem' }}>
           <div style={{ marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '1.75rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>Professional Scope</h2>
-            <p style={{ color: '#6b7280', margin: 0 }}>Practical industry applications and field analytics.</p>
+            <p style={{ color: '#6b7280', margin: 0 }}>Practical industry applications and analytics.</p>
           </div>
 
           <div style={{ backgroundColor: '#090d16', border: '1px solid #1f2937', borderRadius: '12px', padding: '3rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem' }}>
               <div>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>Field Researcher / Specialist Operations [cite: 19]</h3>
-                <p style={{ color: '#6366f1', fontWeight: '600', margin: '0.25rem 0 0 0', fontSize: '1.05rem' }}>International Research Force (IRF), Islamabad [cite: 19]</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>Field Researcher / Specialist</h3>
+                <p style={{ color: '#6366f1', fontWeight: '600', margin: '0.25rem 0 0 0', fontSize: '1.05rem' }}>International Research Force (IRF), Islamabad [cite: 37]</p>
               </div>
               <span style={{ backgroundColor: 'rgba(99, 102, 241, 0.1)', color: '#818cf8', padding: '0.35rem 1rem', borderRadius: '6px', fontSize: '0.85rem', fontWeight: '600', border: '1px solid rgba(99, 102, 241, 0.2)' }}>
-                Field Practice 
+                Field Practice
               </span>
             </div>
             <p style={{ color: '#9ca3af', fontSize: '1.05rem', lineHeight: '1.7', margin: 0 }}>
-              Deployed to verify strategic target metrics, filter complex field datasets, and maintain systemic records. Leveraged structural analytics to map out processing logic and ensure high fidelity information retrieval during active research campaigns.
+              Collaborated on field operations, research metrics, and data collection initiatives[cite: 19]. Applied logic-based analytical processing frameworks to translate project requirements into structured organizational value[cite: 20].
             </p>
           </div>
         </section>
 
-        {/* FOOTER */}
+        {/* Footer Area */}
         <footer style={{ borderTop: '1px solid #1f2937', paddingTop: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
           <p style={{ color: '#6b7280', fontSize: '0.9rem', margin: 0 }}>
-            &copy; {new Date().getFullYear()} Nimra Farooqi. Built with structural clean code layouts.
+            &copy; {new Date().getFullYear()} Nimra Farooqi. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem' }}>
-            <span style={{ color: '#9ca3af' }}>📍 Pakistan </span>
+            <span style={{ color: '#9ca3af' }}>📍 Pakistan [cite: 12]</span>
           </div>
         </footer>
 
