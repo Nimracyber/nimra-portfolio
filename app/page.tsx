@@ -27,25 +27,26 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">Nimra Farooqi</h1>
             <h2 className="text-2xl md:text-3xl font-bold text-[#00abf0]">AI & Data Professional</h2>
             
-            {/* Added Three Status Circles */}
+            {/* Filled Status Circles */}
             <div className="flex gap-4 pt-2 pb-4">
-              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">AI</div>
-              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">DATA</div>
-              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">MATH</div>
+              <div className="w-16 h-16 rounded-full bg-[#00abf0] flex items-center justify-center text-[#081b29] font-extrabold text-sm shadow-[0_0_15px_#00abf0]">AI</div>
+              <div className="w-16 h-16 rounded-full bg-[#00abf0] flex items-center justify-center text-[#081b29] font-extrabold text-sm shadow-[0_0_15px_#00abf0]">DATA</div>
+              <div className="w-16 h-16 rounded-full bg-[#00abf0] flex items-center justify-center text-[#081b29] font-extrabold text-sm shadow-[0_0_15px_#00abf0]">MATH</div>
             </div>
 
             <p className="text-[#edd4c2]/80 leading-relaxed text-base">
-              A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about turning complex datasets and mathematical concepts into smart, automated systems.
+              A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about turning complex datasets and mathematical concepts into smart, automated systems and impactful data-driven web solutions.
             </p>
+            <div className="flex space-x-4 pt-4">
+              <a href="mailto:nimrafarooqi46@gmail.com" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 shadow-[0_0_15px_#00abf0]"><i className="fas fa-envelope text-lg"></i></a>
+              <a href="#" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300"><i className="fab fa-linkedin-in text-lg"></i></a>
+              <a href="#" className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300"><i className="fab fa-github text-lg"></i></a>
+            </div>
           </div>
-
-          {/* ABSTRACT TECH ILLUSTRATION - NO HUMAN FACE */}
           <div className="flex justify-center">
-            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] flex items-center justify-center bg-[#112e42]">
-               <svg viewBox="0 0 100 100" className="w-48 h-48 text-[#00abf0]">
-                  <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" strokeWidth="4" strokeLinejoin="round"/>
-                  <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="4"/>
-               </svg>
+            {/* Cartoon Style Professional Avatar */}
+            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] overflow-hidden bg-[#112e42] flex items-center justify-center">
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=NimraTech&style=circle&backgroundColor=112e42" alt="Nimra Cartoon Avatar" className="w-[90%] h-[90%] object-cover" />
             </div>
           </div>
         </div>
@@ -55,26 +56,38 @@ export default function Home() {
       <section id="about" className="py-24 bg-[#112e42] px-6 border-t border-b border-[#00abf0]/10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
-            <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] flex items-center justify-center bg-[#081b29]">
-               {/* ABSTRACT GRID ILLUSTRATION */}
-               <svg viewBox="0 0 100 100" className="w-64 h-64 text-[#00abf0]">
-                  <rect x="20" y="20" width="60" height="60" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="20" y1="50" x2="80" y2="50" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="50" y1="20" x2="50" y2="80" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="50" cy="50" r="5" fill="currentColor"/>
-               </svg>
+            {/* Tech/AI Themed Cartoon Bot Image for the About Section */}
+            <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] overflow-hidden shadow-xl bg-[#081b29] flex items-center justify-center">
+              <img src="https://api.dicebear.com/9.x/bottts/svg?seed=DataAI&backgroundColor=081b29" alt="AI Bot Illustration" className="w-[80%] h-[80%] object-contain" />
             </div>
           </div>
           <div className="space-y-6">
             <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span className="text-[#00abf0]">Me</span></h2>
             <p className="text-white leading-relaxed">
-              As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms.
+              As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across elite skill development initiatives equips me with expertise spanning data architecture, pipeline optimization, and AI solution prototyping.
+            </p>
+            <p className="text-white leading-relaxed">
+              Beyond analytical tasks, I bring hands-on experience handling complex operational datasets safely and systematically, drawing from practical field operations with the International Research Force (IRF) in Islamabad.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ... (Keep the rest of your education, skills, services, and footer code here) ... */}
-    </div>
-  );
-}
+      {/* EDUCATION & EXPERIENCE TIMELINE SECTION */}
+      <section id="education" className="py-24 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-extrabold text-center text-white mb-16">My <span className="text-[#00abf0]">Journey</span></h2>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Academic Background Journey */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-graduation-cap text-[#00abf0] mr-3"></i>Education</h3>
+            <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold">Post-Graduation</span>
+                <h4 className="text-xl font-bold text-white mt-1">M.Sc. Mathematics</h4>
+                <p className="text-gray-400 text-sm mt-1">Advanced analytical reasoning, quantitative modeling, and structural logic application.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold
