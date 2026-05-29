@@ -37,4 +37,80 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] overflow-hidden bg-[#112e42]">
-              <img src="
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Nimra" alt="Nimra Portfolio Illustration" className="w-full h-full p-4 object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section id="about" className="py-24 bg-[#112e42] px-6 border-t border-b border-[#00abf0]/10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="flex justify-center">
+            <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] overflow-hidden shadow-xl bg-[#081b29]">
+              <img src="https://api.dicebear.com/7.x/identicon/svg?seed=NimraData" alt="About Nimra Illustration" className="w-full h-full p-8 object-contain" />
+            </div>
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span className="text-[#00abf0]">Me</span></h2>
+            <p className="text-white leading-relaxed">
+              As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across elite skill development initiatives equips me with expertise spanning data architecture, pipeline optimization, and AI solution prototyping.
+            </p>
+            <p className="text-white leading-relaxed">
+              Beyond analytical tasks, I bring hands-on experience handling complex operational datasets safely and systematically, drawing from practical field operations with the International Research Force (IRF) in Islamabad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* EDUCATION & EXPERIENCE TIMELINE SECTION */}
+      <section id="education" className="py-24 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-extrabold text-center text-white mb-16">My <span className="text-[#00abf0]">Journey</span></h2>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Academic Background Journey */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-graduation-cap text-[#00abf0] mr-3"></i>Education</h3>
+            <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold">Post-Graduation</span>
+                <h4 className="text-xl font-bold text-white mt-1">M.Sc. Mathematics</h4>
+                <p className="text-gray-400 text-sm mt-1">Advanced analytical reasoning, quantitative modeling, and structural logic application.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold">Bachelors Degree</span>
+                <h4 className="text-xl font-bold text-white mt-1">B.Sc (Double Math Physics)</h4>
+                <p className="text-gray-400 text-sm mt-1">Foundational principles in computational mathematics and theoretical physical systems.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold">Intermediate</span>
+                <h4 className="text-xl font-bold text-white mt-1">F.Sc (Pre-Engineering)</h4>
+                <p className="text-gray-400 text-sm mt-1">Core foundations in physical science, complex calculations, and engineering metrics.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Professional Experience & Trainings Journey */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-briefcase text-[#00abf0] mr-3"></i>Experience & Certifications</h3>
+            <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-emerald-400 font-mono font-bold">Field Experience</span>
+                <h4 className="text-xl font-bold text-white mt-1">Field Researcher</h4>
+                <p className="text-[#00abf0] text-sm font-medium">International Research Force (IRF), Islamabad</p>
+                <p className="text-gray-400 text-sm mt-1">Executing rigorous data collection paradigms, managing structural records, and implementing precise field operational protocols.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold">Elite Training Certifications</span>
+                <h4 className="text-xl font-bold text-white mt-1">Advanced Technology Programs</h4>
+                <ul className="text-gray-400 text-sm mt-2 space-y-2 list-disc list-inside">
+                  <li>Artificial Intelligence & Robotics — <span className="text-white">NAVTTC Centre of Excellence, Islamabad</span></li>
+                  <li>Advanced Data Analytics — <span className="text-white">Chief Minister Punjab Skill Development Initiative</span></li>
+                  <li>Artificial Intelligence & Python — <span className="text-white">DigiSkills Training Program</span></li>
+                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills Training Program</span></li>
+                  <li>Certified Freelancing & MS Office Suite — <span className="text-
