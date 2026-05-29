@@ -27,13 +27,11 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">Nimra Farooqi</h1>
             <h2 className="text-2xl md:text-3xl font-bold text-[#00abf0]">AI & Data Professional</h2>
             
-            {/* The Three Circles Added Beneath Info */}
-            <div className="flex gap-4 py-4">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="w-16 h-16 rounded-full border-2 border-[#00abf0] flex items-center justify-center bg-[#112e42]/50 hover:bg-[#00abf0]/20 transition-colors">
-                  <span className="text-[#00abf0] font-bold text-xs">0{i}</span>
-                </div>
-              ))}
+            {/* Added Three Status Circles */}
+            <div className="flex gap-4 pt-2 pb-4">
+              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">AI</div>
+              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">DATA</div>
+              <div className="w-14 h-14 rounded-full border-2 border-[#00abf0] flex items-center justify-center text-[#00abf0] font-bold text-xs bg-[#112e42]/50">MATH</div>
             </div>
 
             <p className="text-[#edd4c2]/80 leading-relaxed text-base">
@@ -41,12 +39,12 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Abstract Vector Placeholder - No human resemblance */}
+          {/* ABSTRACT TECH ILLUSTRATION - NO HUMAN FACE */}
           <div className="flex justify-center">
-            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] bg-[#081b29] flex items-center justify-center overflow-hidden">
-               <svg className="w-48 h-48 text-[#00abf0]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 2v20M2 12h20M12 2l4 10-4 10M12 2l-4 10 4 10" strokeLinecap="round" />
+            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] flex items-center justify-center bg-[#112e42]">
+               <svg viewBox="0 0 100 100" className="w-48 h-48 text-[#00abf0]">
+                  <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" strokeWidth="4" strokeLinejoin="round"/>
+                  <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="4"/>
                </svg>
             </div>
           </div>
@@ -58,10 +56,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] flex items-center justify-center bg-[#081b29]">
-              <svg className="w-64 h-64 text-[#00abf0]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                 <rect x="3" y="3" width="18" height="18" rx="2" />
-                 <path d="M3 9h18M9 21V9M15 21V9" />
-              </svg>
+               {/* ABSTRACT GRID ILLUSTRATION */}
+               <svg viewBox="0 0 100 100" className="w-64 h-64 text-[#00abf0]">
+                  <rect x="20" y="20" width="60" height="60" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="20" y1="50" x2="80" y2="50" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="50" y1="20" x2="50" y2="80" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="50" cy="50" r="5" fill="currentColor"/>
+               </svg>
             </div>
           </div>
           <div className="space-y-6">
@@ -73,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ... Keep the rest of your sections (Education, Skills, etc.) as they were ... */}
+      {/* ... (Keep the rest of your education, skills, services, and footer code here) ... */}
     </div>
   );
 }
