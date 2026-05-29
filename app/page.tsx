@@ -2,194 +2,165 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div style={{
-      backgroundColor: '#0a0d1a', // Deep, premium dark high-tech background
-      color: '#f8fafc',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-      minHeight: '100vh',
-      margin: 0,
-      padding: 0,
-      position: 'relative',
-      overflowX: 'hidden'
-    }}>
-      {/* Subtle glowing technical background grid effect */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(0, 188, 212, 0.07), transparent 50%), radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.05), transparent 50%)',
-        pointerEvents: 'none',
-        zIndex: 1
-      }} />
+    <div className="bg-[#09011a] text-white font-sans antialiased min-h-screen selection:bg-cyan-500 selection:text-black">
+      {/* HEADER / NAVIGATION */}
+      <header className="fixed top-0 left-0 w-full bg-[#09011a]/90 backdrop-blur-md z-50 border-b border-gray-800/50">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="#" className="text-3xl font-serif italic tracking-wide text-white hover:text-cyan-400 transition-colors">Nimra</a>
+          <nav className="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase">
+            <a href="#home" className="text-cyan-400 hover:text-cyan-400 transition-colors">Home</a>
+            <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
+            <a href="#skills" className="hover:text-cyan-400 transition-colors">Skill</a>
+            <a href="#services" className="hover:text-cyan-400 transition-colors">Service</a>
+            <a href="#portfolio" className="hover:text-cyan-400 transition-colors">Portfolio</a>
+            <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-      {/* Top Header Navigation */}
-      <nav style={{
-        position: 'sticky',
-        top: 0,
-        backgroundColor: 'rgba(10, 13, 26, 0.85)',
-        backdropFilter: 'blur(16px)',
-        borderBottom: '1px solid #1e293b',
-        zIndex: 100,
-        padding: '1.25rem 2rem'
-      }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontSize: '1.6rem', fontWeight: '800', letterSpacing: '1px', color: '#00bcd4' }}>Nimra</span>
-          <div style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem', fontWeight: '600', letterSpacing: '0.5px' }}>
-            <a href="#home" style={{ color: '#00bcd4', textDecoration: 'none' }}>HOME</a>
-            <a href="#about" style={{ color: '#ffffff', textDecoration: 'none' }}>ABOUT</a>
-            <a href="#skills" style={{ color: '#ffffff', textDecoration: 'none' }}>SKILLS</a>
-            <a href="#qualifications" style={{ color: '#ffffff', textDecoration: 'none' }}>QUALIFICATIONS</a>
+      {/* HERO SECTION */}
+      <section id="home" className="min-h-screen flex items-center pt-20 px-6 max-w-6xl mx-auto smooth-scroll">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+          <div className="order-2 md:order-1 space-y-6">
+            <h3 class="text-xl font-medium tracking-wide">Hello, I'm</h3>
+            <h1 className="text-6xl md:text-7xl font-bold tracking-tight">Nimra Farooqi</h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-white">
+              And I'm An <span className="text-cyan-400 border-r-2 border-cyan-400 pr-1 animate-pulse">AI & Data Professional</span>
+            </h2>
+            <p className="text-gray-400 leading-relaxed text-base max-w-lg">
+              A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO[cite: 18]. Passionate about leveraging quantitative analytics and machine learning tools to build high-performance data pipelines and computational systems.
+            </p>
+            <div className="flex space-x-4 pt-4">
+              <a href="tel:03038859060" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fas fa-phone"></i></a>
+              <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div className="order-1 md:order-2 flex justify-center">
+            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-cyan-400 shadow-[0_0_40px_rgba(0,229,255,0.3)] overflow-hidden bg-gradient-to-b from-[#0f052b] to-[#09011a] flex items-center justify-center">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop" alt="Nimra Portrait" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
-      </nav>
+      </section>
 
-      {/* Main Container */}
-      <main style={{ maxWidth: '1100px', margin: '0 auto', padding: '4rem 2rem', position: 'relative', zIndex: 2 }}>
-        
-        {/* HERO SECTION */}
-        <section id="home" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '4rem', padding: '4rem 0 6rem 0' }}>
-          <div style={{ flex: '1.2', minWidth: '300px' }}>
-            <h4 style={{ color: '#00bcd4', fontSize: '1.2rem', fontWeight: '600', margin: '0 0 0.5rem 0', letterSpacing: '2px' }}>HELLO, I'M</h4>
-            <h1 style={{ fontSize: '4.5rem', fontWeight: '800', margin: '0 0 1rem 0', lineHeight: '1.1', color: '#ffffff' }}>Nimra Farooqi</h1>
-            <h3 style={{ fontSize: '1.8rem', color: '#cbd5e1', fontWeight: '600', margin: '0 0 2rem 0' }}>
-              Mathematics Graduate &amp; AI Specialist
-            </h3>
-            <p style={{ color: '#94a3b8', fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '2.5rem', maxWidth: '600px' }}>
-              Leveraging an advanced mathematical foundation to build intelligent computational architectures, structural data models, and automated logic workflows. [cite: 18, 20]
+      {/* ABOUT ME SECTION */}
+      <section id="about" className="py-24 bg-gradient-to-b from-[#09011a] to-[#0f052b] px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="flex justify-center">
+            <div className="w-72 h-80 md:w-96 md:h-[450px] rounded-2xl border-2 border-cyan-400/50 overflow-hidden shadow-2xl shadow-cyan-400/10">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500&auto=format&fit=crop" alt="About" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-4xl font-bold border-b-2 border-cyan-400 inline-block pb-2 tracking-wide">ABOUT ME</h2>
+            <p className="text-gray-300 leading-relaxed">
+              As a dedicated professional with a strong foundation in <strong className="text-cyan-400">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms[cite: 18, 23]. My training across professional development initiatives equips me with skills spanning automated systems, technical optimization, and predictive analytics[cite: 18, 20].
             </p>
-            <div style={{ display: 'flex', gap: '1rem' }}>
-              <a href="#skills" style={{ backgroundColor: '#00bcd4', color: '#0a0d1a', padding: '0.8rem 2rem', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', transition: 'all 0.3s' }}>View Expertise</a>
-              <a href="#qualifications" style={{ border: '2px solid #ffffff', color: '#ffffff', padding: '0.8rem 2rem', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem' }}>Qualifications</a>
-            </div>
-          </div>
-          
-          {/* Professional Tech Matrix/Laptop Conceptual Frame */}
-          <div style={{ flex: '1', display: 'flex', justifyContent: 'center', minWidth: '320px' }}>
-            <div style={{
-              width: '100%',
-              maxWidth: '400px',
-              height: '300px',
-              borderRadius: '12px',
-              border: '1px solid rgba(0, 188, 212, 0.3)',
-              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 188, 212, 0.1)',
-              backgroundImage: 'url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80")', // Professional cybersecurity tech matrix image
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }} />
-          </div>
-        </section>
-
-        {/* ABOUT PROFILE STATEMENT */}
-        <section id="about" style={{ padding: '5rem 0', borderTop: '1px solid #1e293b' }}>
-          <h2 style={{ fontSize: '2.2rem', fontWeight: '700', marginBottom: '2rem', textAlign: 'center' }}>
-            About <span style={{ color: '#00bcd4' }}>Me</span>
-          </h2>
-          <div style={{ backgroundColor: '#111625', border: '1px solid #1e293b', borderRadius: '12px', padding: '3rem', textAlign: 'center' }}>
-            <p style={{ color: '#cbd5e1', fontSize: '1.15rem', lineHeight: '1.8', margin: 0 }}>
-              Armed with an M.Sc. in Mathematics, I bridge the critical gap between abstract statistical algorithms and functional technology solutions. [cite: 18, 20, 23] Trained across premium national frameworks, my focus lies in expanding data integrity, configuring machine intelligence pipelines, and executing precision data analytics. [cite: 18, 30, 31]
+            <p className="text-gray-300 leading-relaxed">
+              Beyond algorithmic tasks, I bring hands-on experience handling complex operational tasks safely and systematically through field research engagements with the International Research Force (IRF) in Islamabad[cite: 19, 37]. 
             </p>
-          </div>
-        </section>
-
-        {/* SKILLS SECTION WITH PERCENTAGES */}
-        <section id="skills" style={{ padding: '5rem 0', borderTop: '1px solid #1e293b' }}>
-          <h2 style={{ fontSize: '2.2rem', fontWeight: '700', marginBottom: '4rem', textAlign: 'center' }}>
-            My <span style={{ color: '#00bcd4' }}>Skills</span>
-          </h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2.5rem', textAlign: 'center' }}>
-            <div style={{ backgroundColor: '#111625', padding: '2rem', borderRadius: '8px', border: '1px solid #1e293b' }}>
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📈</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: '#ffffff' }}>Data Analytics</h3>
-              <span style={{ color: '#00bcd4', fontWeight: '700', fontSize: '1.6rem' }}>95%</span>
-            </div>
-            <div style={{ backgroundColor: '#111625', padding: '2rem', borderRadius: '8px', border: '1px solid #1e293b' }}>
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🤖</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: '#ffffff' }}>Artificial Intelligence</h3>
-              <span style={{ color: '#00bcd4', fontWeight: '700', fontSize: '1.6rem' }}>90%</span>
-            </div>
-            <div style={{ backgroundColor: '#111625', padding: '2rem', borderRadius: '8px', border: '1px solid #1e293b' }}>
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🐍</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: '#ffffff' }}>Python Programming</h3>
-              <span style={{ color: '#00bcd4', fontWeight: '700', fontSize: '1.6rem' }}>88%</span>
-            </div>
-            <div style={{ backgroundColor: '#111625', padding: '2rem', borderRadius: '8px', border: '1px solid #1e293b' }}>
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: '#ffffff' }}>SEO Optimization</h3>
-              <span style={{ color: '#00bcd4', fontWeight: '700', fontSize: '1.6rem' }}>85%</span>
-            </div>
-          </div>
-        </section>
-
-        {/* REVISED EDUCATION & CERTIFICATIONS INFRASTRUCTURE */}
-        <section id="qualifications" style={{ padding: '5rem 0', borderTop: '1px solid #1e293b' }}>
-          <h2 style={{ fontSize: '2.2rem', fontWeight: '700', marginBottom: '4rem', textAlign: 'center' }}>
-            Education &amp; <span style={{ color: '#00bcd4' }}>Credentials</span>
-          </h2>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
-            
-            {/* Degree Column - Only Masters Included */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#00bcd4', marginBottom: '0.5rem' }}>Academic Degree</h3>
-              <div style={{ backgroundColor: '#111625', border: '1px solid #00bcd4', borderRadius: '8px', padding: '2rem' }}>
-                <span style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', color: '#00bcd4', padding: '0.3rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: '700' }}>GRADUATION</span>
-                <h4 style={{ fontSize: '1.3rem', fontWeight: '600', marginTop: '1rem', marginBottom: '0.25rem', color: '#ffffff' }}>M.Sc. Mathematics</h4>
-                <p style={{ color: '#94a3b8', margin: 0, fontSize: '0.95rem' }}>University of Gujrat [cite: 23]</p>
+            <div className="flex space-x-12 pt-4">
+              <div>
+                <span className="text-4xl font-extrabold text-cyan-400">6+</span>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mt-1">Certifications</p>
+              </div>
+              <div>
+                <span className="text-4xl font-extrabold text-cyan-400">15+</span>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mt-1">Core Projects</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Certifications Column */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#00bcd4', marginBottom: '0.5rem' }}>Specialized Courses</h3>
-              <div style={{ backgroundColor: '#111625', border: '1px solid #1e293b', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div>
-                  <h5 style={{ margin: '0 0 0.25rem 0', fontSize: '1.05rem', color: '#ffffff' }}>AI &amp; Robotics Certification</h5>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>NAVTTC Centre of Excellence, Islamabad [cite: 30]</p>
-                </div>
-                <div>
-                  <h5 style={{ margin: '0 0 0.25rem 0', fontSize: '1.05rem', color: '#ffffff' }}>Advanced Data Analytics</h5>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>Chief Minister Punjab Skill Development Initiative [cite: 31]</p>
-                </div>
-                <div>
-                  <h5 style={{ margin: '0 0 0.25rem 0', fontSize: '1.05rem', color: '#ffffff' }}>AI, Python &amp; SEO Frameworks</h5>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>DigiSkills Training Program [cite: 32, 33]</p>
-                </div>
-                <div>
-                  <h5 style={{ margin: '0 0 0.25rem 0', fontSize: '1.05rem', color: '#ffffff' }}>Certified Freelancing Professional &amp; MS Office</h5>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>PFTP Programs [cite: 34, 35]</p>
-                </div>
+      {/* SKILLS & TIMELINE */}
+      <section id="skills" className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold inline-block border-b-2 border-cyan-400 pb-2 tracking-wide">Education & Trainings</h2>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Education</h3>
+            <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-8">
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Masters</span>
+                <h4 className="text-xl font-semibold mt-2">M.Sc. Mathematics</h4>
+                <p className="text-gray-400 text-sm">Advanced Analytical & Quantitative Modeling[cite: 23].</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Bachelors</span>
+                <h4 className="text-xl font-semibold mt-2">B.Sc (Double Math Physics)</h4>
+                <p className="text-gray-400 text-sm">Logic & Computational Physics Foundations[cite: 25].</p>
               </div>
             </div>
-
           </div>
-        </section>
 
-        {/* WORK EXPERIENCE */}
-        <section id="experience" style={{ padding: '5rem 0', borderTop: '1px solid #1e293b' }}>
-          <h2 style={{ fontSize: '2.2rem', fontWeight: '700', marginBottom: '3rem', textAlign: 'center' }}>
-            Professional <span style={{ color: '#00bcd4' }}>History</span>
-          </h2>
-          <div style={{ backgroundColor: '#111625', border: '1px solid #1e293b', borderRadius: '8px', padding: '2.5rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
-              <h3 style={{ fontSize: '1.35rem', fontWeight: '700', margin: 0, color: '#ffffff' }}>Field Researcher / Analytics Practice</h3>
-              <span style={{ color: '#00bcd4', fontWeight: '600', fontSize: '0.9rem' }}>International Research Force (IRF) [cite: 19, 37]</span>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Trainings & Experience</h3>
+            <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-8">
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full font-mono">Field Experience</span>
+                <h4 className="text-xl font-semibold mt-2">Field Researcher</h4>
+                <p className="text-cyan-400 text-sm font-medium">International Research Force (IRF), Islamabad [cite: 19, 37]</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">NAVTTC</span>
+                <h4 className="text-xl font-semibold mt-2">AI & Robotics Certification</h4>
+                <p className="text-gray-400 text-sm">Centre of Excellence, Islamabad[cite: 30]. Specialization in automation models.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">CM Punjab</span>
+                <h4 className="text-xl font-semibold mt-2">Advanced Data Analytics</h4>
+                <p className="text-gray-400 text-sm">Chief Minister Punjab Skill Development Initiative[cite: 31]. End-to-end processing pipelines.</p>
+              </div>
             </div>
-            <p style={{ color: '#94a3b8', lineHeight: '1.6', margin: 0 }}>
-              Executed structured field research protocols and data logging metrics. Handled numerical record alignment and dataset sorting during data validation operations in Islamabad. [cite: 19, 37]
-            </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* SECURE CLEAN FOOTER */}
-        <footer style={{ borderTop: '1px solid #1e293b', paddingTop: '2.5rem', marginTop: '5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontSize: '0.9rem', color: '#64748b' }}>
-          <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()} Nimra Farooqi. All rights reserved.</p>
-          <p style={{ margin: 0 }}>📍 Islamabad / Chakwal, PK</p>
-        </footer>
+      {/* SERVICE SECTION */}
+      <section id="services" className="py-24 bg-gradient-to-b from-[#0f052b] to-[#09011a] px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 class="text-4xl font-bold inline-block border-b-2 border-cyan-400 pb-2 tracking-wide mb-16">SERVICES</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">AI & Python Solutions</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Building intelligent computer vision solutions and custom automated models engineered with python architectures[cite: 18, 32].
+              </p>
+            </div>
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">Data Science Pipelines</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Extracting core statistical insights and engineering data-driven platforms native to mathematical theories[cite: 18, 20].
+              </p>
+            </div>
+            <div className="bg-[#09011a] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-3">Technical SEO & Audits</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Optimizing discoverability footprint structures and handling organic page optimization algorithms effectively[cite: 18, 33].
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      </main>
+      {/* CONTACT BANNER */}
+      <section id="contact" className="py-20 border-t border-gray-800 text-center px-6">
+        <h2 className="text-4xl font-extrabold tracking-tight mb-4">Turn Your Vision Into Reality</h2>
+        <p className="text-gray-400 max-w-lg mx-auto text-sm mb-6">
+          Leverage specialized data frameworks and computational expertise to accelerate your organizational growth objectives[cite: 20].
+        </p>
+        <a href="mailto:nimra.farooqi@example.com" className="bg-cyan-400 text-[#09011a] px-8 py-3 rounded-full font-bold shadow-lg shadow-cyan-400/20 hover:bg-white hover:scale-105 transition-all inline-block">
+          Contact Me
+        </a>
+      </section>
     </div>
   );
 }
