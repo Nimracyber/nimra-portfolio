@@ -31,7 +31,7 @@ export default function Home() {
               A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about leveraging quantitative analytics and machine learning tools to build high-performance data pipelines and computational systems.
             </p>
             <div className="flex space-x-4 pt-4">
-              <a href="tel:03038859060" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fas fa-phone"></i></a>
+              <a href="mailto:nimrafarooqi46@gmail.com" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fas fa-envelope"></i></a>
               <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-linkedin-in"></i></a>
               <a href="#" className="w-11 h-11 rounded-full border border-cyan-400/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-400 hover:text-[#09011a] transition-all duration-300"><i className="fab fa-github"></i></a>
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
               As a dedicated professional with a strong foundation in <strong className="text-cyan-400">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across professional development initiatives equips me with skills spanning automated systems, technical optimization, and predictive analytics.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Beyond algorithmic tasks, I bring hands-on experience handling complex operational tasks safely and systematically through field research engagements with the International Research Force (IRF) in Islamabad. 
+              Beyond algorithmic tasks, I bring hands-on experience handling complex operational tasks safely and systematically through field research engagements with the International Research Force (IRF) in Islamabad.
             </p>
             <div className="flex space-x-12 pt-4">
               <div>
@@ -74,50 +74,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS & TIMELINE */}
+      {/* SKILLS, EDUCATION & CERTIFICATIONS TIMELINE */}
       <section id="skills" className="py-24 px-6 max-w-6xl mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl font-bold inline-block border-b-2 border-cyan-400 pb-2 tracking-wide">Education & Trainings</h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* ACADEMIC PROFILE */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Education</h3>
+            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Academic Profile</h3>
             <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-8">
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
-                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Masters</span>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Graduation</span>
                 <h4 className="text-xl font-semibold mt-2">M.Sc. Mathematics</h4>
-                <p className="text-gray-400 text-sm">Advanced Analytical & Quantitative Modeling.</p>
+                <p className="text-gray-400 text-sm">Advanced analytical reasoning, quantitative modeling, and structural logic application.</p>
               </div>
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
-                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Bachelors</span>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Bachelor of Science</span>
                 <h4 className="text-xl font-semibold mt-2">B.Sc (Double Math Physics)</h4>
-                <p className="text-gray-400 text-sm">Logic & Computational Physics Foundations.</p>
+                <p className="text-gray-400 text-sm">Foundational principles in computational mathematics and theoretical physical systems.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">Intermediate</span>
+                <h4 className="text-xl font-semibold mt-2">F.Sc (Pre-Engineering)</h4>
+                <p className="text-gray-400 text-sm">Core concepts in engineering disciplines, mathematics, and science.</p>
               </div>
             </div>
           </div>
 
+          {/* TECHNICAL TRAINING & CERTIFICATIONS */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Trainings & Experience</h3>
-            <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-8">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-4">Technical Training & Certifications</h3>
+            <div className="relative border-l-2 border-cyan-400/30 pl-6 ml-2 space-y-6">
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
-                <span className="text-xs bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full font-mono">Field Experience</span>
-                <h4 className="text-xl font-semibold mt-2">Field Researcher</h4>
-                <p className="text-cyan-400 text-sm font-medium">International Research Force (IRF), Islamabad</p>
+                <h4 className="text-base font-semibold">Artificial Intelligence & Robotics</h4>
+                <p className="text-gray-400 text-xs">NAVTTC Centre of Excellence, Islamabad</p>
               </div>
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
-                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">NAVTTC</span>
-                <h4 className="text-xl font-semibold mt-2">AI & Robotics Certification</h4>
-                <p className="text-gray-400 text-sm">Centre of Excellence, Islamabad. Specialization in automation models.</p>
+                <h4 className="text-base font-semibold">Advanced Data Analytics</h4>
+                <p className="text-gray-400 text-xs">Chief Minister Punjab Skill Development Initiative</p>
               </div>
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
-                <span className="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full font-mono">CM Punjab</span>
-                <h4 className="text-xl font-semibold mt-2">Advanced Data Analytics</h4>
-                <p className="text-gray-400 text-sm">Chief Minister Punjab Skill Development Initiative. End-to-end processing pipelines.</p>
+                <h4 className="text-base font-semibold">Artificial Intelligence & Python</h4>
+                <p className="text-gray-400 text-xs">DigiSkills Training Program (PM's Initiative)</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <h4 className="text-base font-semibold">SEO (Search Engine Optimization)</h4>
+                <p className="text-gray-400 text-xs">DigiSkills Training Program (PM's Initiative)</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <h4 className="text-base font-semibold">Certified Freelancing Professional</h4>
+                <p className="text-gray-400 text-xs">Professional Freelancing Training Program</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-cyan-400 w-4 h-4 rounded-full border-4 border-[#09011a]"></div>
+                <h4 className="text-base font-semibold">Certificate in MS Office Suite</h4>
+                <p className="text-gray-400 text-xs">Professional Freelancing Training Program</p>
               </div>
             </div>
           </div>
@@ -157,7 +177,7 @@ export default function Home() {
         <p className="text-gray-400 max-w-lg mx-auto text-sm mb-6">
           Leverage specialized data frameworks and computational expertise to accelerate your organizational growth objectives.
         </p>
-        <a href="mailto:nimra.farooqi@example.com" className="bg-cyan-400 text-[#09011a] px-8 py-3 rounded-full font-bold shadow-lg shadow-cyan-400/20 hover:bg-white hover:scale-105 transition-all inline-block">
+        <a href="mailto:nimrafarooqi46@gmail.com" className="bg-cyan-400 text-[#09011a] px-8 py-3 rounded-full font-bold shadow-lg shadow-cyan-400/20 hover:bg-white hover:scale-105 transition-all inline-block">
           Contact Me
         </a>
       </section>
