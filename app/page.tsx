@@ -1,150 +1,70 @@
+import React from 'react';
+
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 text-gray-800 scroll-smooth">
-      
-      {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 md:px-12 py-5 bg-white/90 backdrop-blur-md sticky top-0 shadow-md z-50">
-        <h2 className="text-2xl font-bold text-pink-600">Personal Portfolio</h2>
-        <ul className="flex gap-5 text-sm md:text-base font-medium">
-          <li><a href="#about" className="hover:text-pink-600 transition">About</a></li>
-          <li><a href="#skills" className="hover:text-pink-600 transition">Skills</a></li>
-          <li><a href="#projects" className="hover:text-pink-600 transition">Projects</a></li>
-          <li><a href="#resume" className="hover:text-pink-600 transition">Resume</a></li>
-          <li><a href="#contact" className="hover:text-pink-600 transition">Contact</a></li>
-        </ul>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center text-center px-5 animate-fadeIn">
-        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text text-transparent">
-          Nimra Farooqi 
-        </h1>
-        <p className="mt-4 text-lg max-w-2xl">
-          Master&apos;s in Mathematics | Data Analyst | Digital Marketer | AI & Robotics Enthusiast
-        </p>
-        <a
-          href="#contact"
-          className="mt-6 px-6 py-3 rounded-full text-white bg-gradient-to-r from-pink-600 to-purple-700 shadow-lg hover:scale-105 transition"
-        >
-          Hire Me
-        </a>
-      </section>
-
-      {/* About */}
-      <section id="about" className="px-6 md:px-20 py-16">
-        <div className="bg-white rounded-2xl p-10 shadow-lg">
-          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-6 relative">
-            About Me
-            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
-          </h2>
-          <p className="text-bold center max-w-3xl mx-auto">
-            Hello! I am Nimra Farooqi, a passionate professional with a Master's in Mathematics
-            and certifications in Data Analytics, Digital Marketing, AI, and Robotics. I love
-            combining analytical thinking, creativity, and technology to solve real-world problems.
+    <div style={{
+      backgroundColor: '#0f172a',
+      color: '#e2e8f0',
+      fontFamily: 'Segoe UI, sans-serif',
+      minHeight: '100vh',
+      padding: '4rem 2rem'
+    }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        
+        {/* Header/Hero */}
+        <header style={{ marginBottom: '4rem', borderBottom: '1px solid #334155', paddingBottom: '2rem' }}>
+          <h1 style={{ fontSize: '3rem', color: '#38bdf8', marginBottom: '0.5rem' }}>Nimra Farooqi</h1>
+          <p style={{ fontSize: '1.5rem', color: '#94a3b8' }}>Mathematics Graduate & Data Enthusiast</p>
+          <p style={{ marginTop: '1.5rem', lineHeight: '1.6', fontSize: '1.1rem' }}>
+            A highly motivated professional with a strong analytical background in mathematics, specialized in Artificial Intelligence, Data Analytics, and Robotics[cite: 18, 20]. Experienced in translating complex data into insights and building technical solutions[cite: 18, 20].
           </p>
-        </div>
-      </section>
+        </header>
 
-      {/* Skills */}
-      <section id="skills" className="px-6 md:px-20 py-16">
-        <div className="bg-white rounded-2xl p-10 shadow-lg">
-          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
-            My Skills
-            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              "Data Analytics",
-              "Python & SQL",
-              "Digital Marketing",
-              "AI & Robotics",
-              "Problem Solving",
-              "Mathematics & Statistics",
-            ].map((skill, i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
-              >
-                {skill}
-              </div>
-            ))}
+        {/* Education Section */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ color: '#38bdf8', borderBottom: '2px solid #38bdf8', width: 'fit-content', paddingBottom: '0.25rem', marginBottom: '1.5rem' }}>Education</h2>
+          <div style={{ marginBottom: '1rem' }}>
+            <h3 style={{ fontSize: '1.25rem' }}>M.Sc. Mathematics</h3>
+            <p style={{ color: '#94a3b8' }}>University of Gujrat [cite: 23]</p>
           </div>
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section id="projects" className="px-6 md:px-20 py-16">
-        <div className="bg-white rounded-2xl p-10 shadow-lg">
-          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
-            Projects
-            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              "Analytics Dashboard Project",
-              "Marketing Campaign Strategy",
-              "AI Learning Project",
-            ].map((project, i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
-              >
-                {project}
-              </div>
-            ))}
+          <div style={{ marginBottom: '1rem' }}>
+            <h3 style={{ fontSize: '1.25rem' }}>B.Sc. (Double Mathematics & Physics)</h3>
           </div>
-        </div>
-      </section>
-
-      {/* Resume */}
-      <section id="resume" className="px-6 md:px-20 py-16">
-        <div className="bg-white rounded-2xl p-10 shadow-lg">
-          <h2 className="text-3xl font-semibold text-center text-purple-700 mb-10">
-            Resume Highlights
-            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "Master's in Mathematics",
-              "Certified Data Analyst",
-              "Digital Marketing Expert",
-              "AI & Robotics Certified",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-br from-pink-200 to-purple-200 p-6 rounded-xl text-center shadow hover:-translate-y-2 hover:scale-105 transition"
-              >
-                {item}
-              </div>
-            ))}
+          <div style={{ marginBottom: '1rem' }}>
+            <h3 style={{ fontSize: '1.25rem' }}>F.Sc. (Pre-Engineering)</h3>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact */}
-      <section id="contact" className="px-6 md:px-20 py-16">
-        <div className="bg-white rounded-2xl p-10 shadow-lg text-center">
-          <h2 className="text-3xl font-semibold text-purple-700 mb-6">
-            Contact Me
-            <span className="block w-14 h-1 bg-pink-500 mx-auto mt-2 rounded"></span>
-          </h2>
-          <p>Email: nimrafarooqi46@gmail.com</p>
+        {/* Technical Experience & Certifications */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ color: '#38bdf8', borderBottom: '2px solid #38bdf8', width: 'fit-content', paddingBottom: '0.25rem', marginBottom: '1.5rem' }}>Technical Expertise & Certifications</h2>
+          <ul style={{ lineHeight: '1.8', paddingLeft: '1.2rem' }}>
+            <li>Certification in Artificial Intelligence & Robotics — NAVTTC Centre of Excellence, Islamabad [cite: 30]</li>
+            <li>Advanced Certification in Data Analytics — Chief Minister Punjab Skill Development Initiative [cite: 31]</li>
+            <li>Certification in Artificial Intelligence & Python — DigiSkills Training Program [cite: 32]</li>
+            <li>Certification in SEO (Search Engine Optimization) — DigiSkills Training Program [cite: 33]</li>
+            <li>Certified Freelancing Professional & MS Office Suite — PFTP [cite: 34, 35]</li>
+          </ul>
+        </section>
 
-          <div className="mt-6 flex justify-center gap-6 text-2xl text-pink-600">
-            <a href="#" className="hover:text-purple-700 transition">📧</a>
-            <a href="#" className="hover:text-purple-700 transition">💻</a>
+        {/* Experience Section */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ color: '#38bdf8', borderBottom: '2px solid #38bdf8', width: 'fit-content', paddingBottom: '0.25rem', marginBottom: '1.5rem' }}>Professional Experience</h2>
+          <div>
+            <h3 style={{ fontSize: '1.25rem' }}>Field Researcher / Professional Specialist</h3>
+            <p style={{ color: '#38bdf8', fontWeight: '500' }}>International Research Force (IRF), Islamabad [cite: 37]</p>
+            <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Collaborated on data collection, field research, and strategic analysis initiatives[cite: 19]. Applied mathematical frameworks and logical processing to real-world analytical tasks[cite: 18, 20].</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Footer */}
-      <footer className="text-center py-5 bg-pink-500 text-white mt-10">
-        <p>© 2026 Nimra Farooqi | Driven by Mathematics, Powered by Data</p>
-      </footer>
+        {/* Contact Section */}
+        <section style={{ borderTop: '1px solid #334155', paddingTop: '2rem' }}>
+          <h2 style={{ color: '#38bdf8', marginBottom: '1rem' }}>Contact Details</h2>
+          <p><strong>Mobile:</strong> 03038859060 [cite: 16]</p>
+          <p><strong>Location:</strong> Chakwal / Islamabad, Pakistan</p>
+        </section>
 
-    </main>
+      </div>
+    </div>
   );
 }
