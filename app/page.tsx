@@ -24,7 +24,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">Hi, {"I'm"}</h3>
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white shadow-[#00abf0]/20">Nimra Farooqi</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">Nimra Farooqi</h1>
             <h2 className="text-2xl md:text-3xl font-bold text-[#00abf0]">AI & Data Professional</h2>
             <p className="text-[#edd4c2]/80 leading-relaxed text-base">
               A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about turning complex datasets and mathematical concepts into smart, automated systems and impactful data-driven web solutions.
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div className="space-y-6">
-            <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span class="text-[#00abf0]">Me</span></h2>
+            <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span className="text-[#00abf0]">Me</span></h2>
             <p className="text-white leading-relaxed">
               As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across elite skill development initiatives equips me with expertise spanning data architecture, pipeline optimization, and AI solution prototyping.
             </p>
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Academic Background Journey */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4"><i class="fas fa-graduation-cap text-[#00abf0] mr-3"></i>Education</h3>
+            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-graduation-cap text-[#00abf0] mr-3"></i>Education</h3>
             <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
@@ -95,7 +95,7 @@ export default function Home() {
 
           {/* Professional Experience & Trainings Journey */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4"><i class="fas fa-briefcase text-[#00abf0] mr-3"></i>Experience & Certifications</h3>
+            <h3 className="text-2xl font-bold text-white mb-4"><i className="fas fa-briefcase text-[#00abf0] mr-3"></i>Experience & Certifications</h3>
             <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
@@ -109,11 +109,11 @@ export default function Home() {
                 <span className="text-xs text-[#00abf0] font-mono font-bold">Elite Training Certifications</span>
                 <h4 className="text-xl font-bold text-white mt-1">Advanced Technology Programs</h4>
                 <ul className="text-gray-400 text-sm mt-2 space-y-2 list-disc list-inside">
-                  <li>Artificial Intelligence & Robotics — <span class="text-white">NAVTTC Centre of Excellence, Islamabad</span></li>
-                  <li>Advanced Data Analytics — <span class="text-white">Chief Minister Punjab Skill Development Initiative</span></li>
-                  <li>Artificial Intelligence & Python — <span class="text-white">DigiSkills Training Program</span></li>
-                  <li>SEO (Search Engine Optimization) — <span class="text-white">DigiSkills Training Program</span></li>
-                  <li>Certified Freelancing & MS Office Suite — <span class="text-white">PFTP Training Program</span></li>
+                  <li>Artificial Intelligence & Robotics — <span className="text-white">NAVTTC Centre of Excellence, Islamabad</span></li>
+                  <li>Advanced Data Analytics — <span className="text-white">Chief Minister Punjab Skill Development Initiative</span></li>
+                  <li>Artificial Intelligence & Python — <span className="text-white">DigiSkills Training Program</span></li>
+                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills Training Program</span></li>
+                  <li>Certified Freelancing & MS Office Suite — <span className="text-white">PFTP Training Program</span></li>
                 </ul>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
       {/* TECHNICAL SKILLS GRID */}
       <section id="skills" className="py-24 bg-[#112e42] px-6 border-t border-[#00abf0]/10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-extrabold text-center text-white mb-16">Technical <span class="text-[#00abf0]">Skills</span></h2>
+          <h2 className="text-4xl font-extrabold text-center text-white mb-16">Technical <span className="text-[#00abf0]">Skills</span></h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Python */}
@@ -169,25 +169,25 @@ export default function Home() {
 
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-white mb-16">Our <span class="text-[#00abf0]">Services</span></h2>
+        <h2 className="text-4xl font-extrabold text-center text-white mb-16">Our <span className="text-[#00abf0]">Services</span></h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-[#112e42] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_15px_#00abf0]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i class="fas fa-robot"></i></div>
+            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-robot"></i></div>
             <h3 className="text-2xl font-bold mb-3 text-white">AI & Python Solutions</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Building intelligent computer vision solutions and custom automated models engineered with robust python backend frameworks.
             </p>
           </div>
           <div className="bg-[#112e42] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_15px_#00abf0]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i class="fas fa-chart-line"></i></div>
+            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-chart-line"></i></div>
             <h3 className="text-2xl font-bold mb-3 text-white">Data Analytics</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Extracting core statistical insights and engineering data-driven platforms natively grounded in complex mathematical logical theories.
             </p>
           </div>
           <div className="bg-[#112e42] p-8 rounded-2xl border border-gray-800 shadow-xl hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_15px_#00abf0]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i class="fas fa-globe"></i></div>
+            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-globe"></i></div>
             <h3 className="text-2xl font-bold mb-3 text-white">Technical SEO</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Optimizing structural configurations footprint, code minification setups, and handling organic ranking algorithms seamlessly.
@@ -199,7 +199,7 @@ export default function Home() {
       {/* CONTACT BANNER SECTION */}
       <section id="contact" className="py-24 bg-[#112e42] border-t border-[#00abf0]/20 text-center px-6">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h2 className="text-4xl font-extrabold text-white">Contact <span class="text-[#00abf0]">Me!</span></h2>
+          <h2 className="text-4xl font-extrabold text-white">Contact <span className="text-[#00abf0]">Me!</span></h2>
           <p className="text-white/80 max-w-lg mx-auto text-sm">
             Let{"'"}s work together! Reach out directly via email to leverage specialized quantitative modeling and computational frameworks.
           </p>
