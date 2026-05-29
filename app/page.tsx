@@ -218,4 +218,4 @@ export default function Home() {
 
     </div>
   );
-} This code is perfect. I only want to change picture because this picture is look like more real. I want something not natural because no resemblance with the real person or real man human. and also want the three circles Beneath my information my name and my other data in top of the page there is small.
+}
