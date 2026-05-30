@@ -166,6 +166,9 @@ export default function Home() {
       <section id="contact" className="py-24 bg-[#112e42] border-t border-[#00abf0]/20 text-center px-6">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-4xl font-extrabold text-white">Contact <span className="text-[#00abf0]">Me!</span></h2>
+          <a href="mailto:nimrafarooqi46@gmail.com" className="bg-[#00abf0] text-[#081b29] px-8 py-3 rounded-full font-bold shadow-lg shadow-[#00abf0]/30 hover:bg-white hover:scale-105 transition-all inline-block">
+            nimrafarooqi46@gmail.com
+          </a>
         </div>
       </section>
 
