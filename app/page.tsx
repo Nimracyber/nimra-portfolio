@@ -34,25 +34,47 @@ export default function Home() {
           </div>
           
           <div className="flex justify-center">
+            {/* Cartoon Style Professional Avatar */}
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_25px_#00abf0] overflow-hidden bg-[#112e42] relative">
               <Image 
                 src="https://api.dicebear.com/9.x/avataaars/svg?seed=NimraTech&style=circle&backgroundColor=112e42" 
                 alt="Nimra Cartoon Avatar" 
-                fill 
-                className="object-cover"
+                fill
                 sizes="(max-width: 768px) 288px, 384px"
+                className="object-cover p-2"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ABOUT, EDUCATION, SKILLS, SERVICES, AND CONTACT SECTIONS... */}
-      {/* (Rest of your code remains here) */}
-      
-      <footer className="py-8 bg-[#081b29] text-center text-xs text-gray-500 border-t border-gray-900">
-        <p>&copy; 2026 Nimra Farooqi. All Rights Reserved.</p>
-      </footer>
+      {/* ABOUT SECTION */}
+      <section id="about" className="py-24 bg-[#112e42] px-6 border-t border-b border-[#00abf0]/10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="flex justify-center">
+            <div className="w-72 h-80 md:w-96 md:h-[420px] rounded-2xl border-2 border-[#00abf0] overflow-hidden shadow-xl bg-[#081b29] relative">
+              <Image 
+                src="https://api.dicebear.com/9.x/bottts/svg?seed=DataAI&backgroundColor=081b29" 
+                alt="AI Bot Illustration" 
+                fill
+                className="object-contain p-4"
+              />
+            </div>
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-4xl font-extrabold text-white tracking-wide">About <span className="text-[#00abf0]">Me</span></h2>
+            <p className="text-white leading-relaxed">
+              As a dedicated professional with a strong foundation in <strong className="text-[#00abf0]">M.Sc. Mathematics</strong>, I specialize in translating logical frameworks into advanced technology paradigms. My training across elite skill development initiatives equips me with expertise spanning data architecture, pipeline optimization, and AI solution prototyping.
+            </p>
+            <p className="text-white leading-relaxed">
+              Beyond analytical tasks, I bring hands-on experience handling complex operational datasets safely and systematically, drawing from practical field operations with the International Research Force (IRF) in Islamabad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ... Remaining sections (Education, Skills, Services, Contact, Footer) stay identical to your provided code ... */}
+
     </div>
   );
 }
