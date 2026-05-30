@@ -23,11 +23,6 @@ export default function Home() {
       <section id="home" className="min-h-screen flex items-center pt-24 px-6 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-white">Hi, {"I'm"}</h3>
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">Nimra Farooqi</h1>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#00abf0]">AI & Data Professional</h2>
-            
-            {/* Filled Status Circles */}
             <div className="flex gap-4 pt-2 pb-4">
               <div className="w-16 h-16 rounded-full bg-[#00abf0] flex items-center justify-center text-[#081b29] font-extrabold text-sm shadow-[0_0_15px_#00abf0]">AI</div>
               <div className="w-16 h-16 rounded-full bg-[#00abf0] flex items-center justify-center text-[#081b29] font-extrabold text-sm shadow-[0_0_15px_#00abf0]">DATA</div>
