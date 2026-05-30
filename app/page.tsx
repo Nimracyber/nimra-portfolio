@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function Home() {
   return (
     <div className="bg-[#081b29] text-[#edd4c2] font-sans antialiased min-h-screen selection:bg-cyan-500 selection:text-black">
