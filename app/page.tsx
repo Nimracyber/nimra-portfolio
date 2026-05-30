@@ -56,7 +56,7 @@ export default function Home() {
                 <i className="fas fa-envelope text-lg"></i>
               </a>
               <a 
-                href="https://www.linkedin.com/in/nimra-farooqi-3676ba26b" 
+                href="www.linkedin.com/in/nimra-farooqi-3676ba26b" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 bg-[#081b29]/50 backdrop-blur-sm"
