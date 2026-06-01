@@ -49,19 +49,20 @@ export default function Home() {
             {/* SOCIAL LINKS (UPDATED) */}
             <div className="flex space-x-4 pt-4">
                <a
-                  href="mailto:nimrafarooqi46@gmai.com"
+                  href="mailto:nimrafarooqi46@gmail.com"
                   className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0]"
                   title="Email Me"
                >
                   <i className="fas fa-envelope text-lg"></i>
                </a>
-                href="https://www.linkedin.com/in/nimra-farooqi-3676ba26b/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 bg-[#081b29]/50 backdrop-blur-sm"
-                title="LinkedIn Profile"
+               <a
+                  href="https://www.linkedin.com/in/nimra-farooqi-3676ba26b/"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 bg-[#081b29]/50 backdrop-blur-sm"
+                  title="LinkedIn Profile"
               >
-                <i className="fab fa-linkedin-in text-lg"></i>
+                  <i className="fab fa-linkedin-in text-lg"></i>
               </a>
               <a 
                 href="https://github.com/Nimracyber" 
