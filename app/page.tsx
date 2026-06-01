@@ -49,9 +49,7 @@ export default function Home() {
             {/* SOCIAL LINKS (UPDATED) */}
             <div className="flex space-x-4 pt-4">
                <a
-                  href="mailto:nimrafarooqi46@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:nimrafarooqi46@gmai.com"
                   className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0]"
                   title="Email Me"
                >
