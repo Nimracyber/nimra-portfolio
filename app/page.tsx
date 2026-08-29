@@ -1,4 +1,4 @@
-       import React from 'react';
+import React from 'react';
 
 export default function Home() {
   const projects = [
@@ -185,27 +185,36 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Professional Experience & Trainings Journey */}
+          {/* Professional Experience & Certifications Journey */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md"><i className="fas fa-briefcase text-[#00abf0] mr-3"></i>Experience & Certifications</h3>
             <div className="relative border-l-2 border-[#00abf0] pl-6 ml-2 space-y-8">
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-emerald-400 font-mono font-bold bg-emerald-400/10 px-2 py-1 rounded">Field Experience</span>
-                <h4 className="text-xl font-bold text-white mt-2">Field Researcher</h4>
-                <p className="text-[#00abf0] text-sm font-medium mt-1">International Research Force (IRF), Islamabad</p>
-                <p className="text-gray-300 text-sm mt-1 font-medium">Executing rigorous data collection paradigms, managing structural records, and implementing precise field operational protocols.</p>
+                <span className="text-xs text-emerald-400 font-mono font-bold bg-emerald-400/10 px-2 py-1 rounded">Apr 2026 - Present • Remote</span>
+                <h4 className="text-xl font-bold text-white mt-2">Python Developer Intern</h4>
+                <p className="text-[#00abf0] text-sm font-medium mt-1">Hasnain Karimain (HK) Educational Academy, Software House & Training Center</p>
+                <p className="text-gray-300 text-sm mt-1 font-medium">Assisted in developing and maintaining applications using Python and backend structures.</p>
               </div>
               <div className="relative">
                 <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
-                <span className="text-xs text-[#00abf0] font-mono font-bold bg-[#00abf0]/10 px-2 py-1 rounded">Elite Training Certifications</span>
-                <h4 className="text-xl font-bold text-white mt-2">Advanced Technology Programs</h4>
+                <span className="text-xs text-emerald-400 font-mono font-bold bg-emerald-400/10 px-2 py-1 rounded">Nov 2022 - Dec 2025 • On-site</span>
+                <h4 className="text-xl font-bold text-white mt-2">Monitoring And Evaluation Officer</h4>
+                <p className="text-[#00abf0] text-sm font-medium mt-1">INTERNATIONAL RESEARCH FORCE (IRF), Islāmābād, Pakistan</p>
+                <p className="text-gray-300 text-sm mt-1 font-medium">Proud to have served with the International Research Force monitoring mass datasets and executing rigorous field operations.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[31px] top-1 bg-[#00abf0] w-4 h-4 rounded-full border-4 border-[#081b29]"></div>
+                <span className="text-xs text-[#00abf0] font-mono font-bold bg-[#00abf0]/10 px-2 py-1 rounded">Certifications & Training</span>
+                <h4 className="text-xl font-bold text-white mt-2">Professional Credentials</h4>
                 <ul className="text-gray-300 text-sm mt-2 space-y-2 list-disc list-inside font-medium">
-                  <li>Artificial Intelligence & Robotics — <span className="text-white">NAVTTC Centre of Excellence, Islamabad</span></li>
-                  <li>Advanced Data Analytics — <span className="text-white">Chief Minister Punjab Skill Development Initiative</span></li>
-                  <li>Artificial Intelligence & Python — <span className="text-white">DigiSkills Training Program</span></li>
-                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills Training Program</span></li>
-                  <li>Certified Freelancing & MS Office Suite — <span className="text-white">PFTP Training Program</span></li>
+                  <li>Artificial Intelligence and Robotics — <span className="text-white">Navttc Centre of Excellence (Aug 2026)</span></li>
+                  <li>Data Analytics — <span className="text-white">CertNexus (May 2026 – May 2031)</span></li>
+                  <li>Artificial Intelligence using Python — <span className="text-white">DigiSkills.pk (Jul 2026)</span></li>
+                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills.pk (Jul 2026)</span></li>
+                  <li>Introduction to SQL — <span className="text-white">Simplilearn (Jun 2026)</span></li>
+                  <li>Teaching the AI Fluency Framework — <span className="text-white">Anthropic (Jan 2026)</span></li>
+                  <li>Freelancing — <span className="text-white">Professional Freelancing Training Program (Aug 2023)</span></li>
                 </ul>
               </div>
             </div>
@@ -340,4 +349,3 @@ export default function Home() {
     </div>
   );
 }
-               
