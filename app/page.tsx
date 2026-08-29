@@ -127,7 +127,7 @@ export default function Home() {
             {/* Professional Avatar Image */}
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-[#00abf0] shadow-[0_0_35px_#00abf0] overflow-hidden bg-[#112e42]/80 backdrop-blur-md flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/path-to-your-image/Gemini_Generated_Image_h4qig0h4qig0h4qi.jpg" alt="Nimra Farooqi Professional Portrait" className="w-full h-full object-cover" />
+              <img src="https://raw.githubusercontent.com/Nimracyber/nimra-portfolio/master/public/Gemini_Generated_Image_h4qig0h4qig0h4qi.jpg" alt="Nimra Farooqi Professional Portrait" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -340,4 +340,3 @@ export default function Home() {
     </div>
   );
 }
-
