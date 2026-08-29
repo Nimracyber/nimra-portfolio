@@ -208,10 +208,10 @@ export default function Home() {
                 <span className="text-xs text-[#00abf0] font-mono font-bold bg-[#00abf0]/10 px-2 py-1 rounded">Certifications & Training</span>
                 <h4 className="text-xl font-bold text-white mt-2">Professional Credentials</h4>
                 <ul className="text-gray-300 text-sm mt-2 space-y-2 list-disc list-inside font-medium">
-                  <li>Artificial Intelligence and Robotics — <span className="text-white">Navttc Centre of Excellence (Aug 2026)</span></li>
-                  <li>Data Analytics — <span className="text-white">CertNexus (May 2026 – May 2031)</span></li>
-                  <li>Artificial Intelligence using Python — <span className="text-white">DigiSkills.pk (Jul 2026)</span></li>
-                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills.pk (Jul 2026)</span></li>
+                  <li>Artificial Intelligence and Robotics — <span className="text-white">Navttc Centre of Excellence (June 2026)</span></li>
+                  <li>Data Analytics — <span className="text-white">CertNexus (Feb 2026 – May 2026)</span></li>
+                  <li>Artificial Intelligence using Python — <span className="text-white">DigiSkills.pk (April 2026 - Jul 2026)</span></li>
+                  <li>SEO (Search Engine Optimization) — <span className="text-white">DigiSkills.pk (April 2026 - Jul 2026)</span></li>
                   <li>Introduction to SQL — <span className="text-white">Simplilearn (Jun 2026)</span></li>
                   <li>Teaching the AI Fluency Framework — <span className="text-white">Anthropic (Jan 2026)</span></li>
                   <li>Freelancing — <span className="text-white">Professional Freelancing Training Program (Aug 2023)</span></li>
