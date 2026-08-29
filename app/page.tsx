@@ -1,6 +1,53 @@
 import React from 'react';
 
 export default function Home() {
+  const projects = [
+    {
+      title: "AI Chatbot using Llama 3 & Ollama",
+      description: [
+        "Developed an AI-powered conversational chatbot using the Llama 3 Large Language Model running locally through Ollama.",
+        "Implemented Natural Language Processing (NLP) techniques for intelligent query understanding and response generation.",
+        "Applied Prompt Engineering strategies to improve chatbot accuracy and user interaction quality.",
+        "Explored practical applications of Generative AI and Large Language Models in conversational systems.",
+        "Built a scalable foundation for AI-assisted communication and knowledge retrieval solutions."
+      ],
+      skills: "Generative AI, Neuro-Linguistic Programming (NLP), +5 skills"
+    },
+    {
+      title: "Food Image Classification Model",
+      description: [
+        "Developed a Deep Learning-based Food Image Classification model using the Food-101 dataset.",
+        "Performed data preprocessing, image augmentation, model training, and validation to improve prediction performance.",
+        "Implemented Convolutional Neural Networks (CNNs) for image recognition and classification tasks.",
+        "Evaluated model performance using accuracy and loss metrics and applied optimization techniques to enhance results.",
+        "Demonstrated practical application of Computer Vision and Deep Learning in food recognition systems."
+      ],
+      skills: "Convolutional Neural Networks (CNN), Data Analysis, +6 skills"
+    },
+    {
+      title: "Handwritten Digit Recognition System",
+      description: [
+        "Designed and developed a Handwritten Digit Recognition System using image classification techniques.",
+        "Implemented image preprocessing and feature extraction pipelines to improve recognition accuracy.",
+        "Trained and evaluated machine learning models on handwritten digit datasets.",
+        "Applied model optimization techniques to enhance classification performance.",
+        "Demonstrated practical implementation of Computer Vision and Pattern Recognition concepts."
+      ],
+      skills: "Deep Learning, OpenCV, +4 skills"
+    },
+    {
+      title: "Personal Portfolio Website",
+      description: [
+        "Developed a responsive personal portfolio website to showcase projects, technical skills, certifications, and achievements.",
+        "Built reusable React components to improve scalability and maintainability.",
+        "Designed modern and user-friendly interfaces using Next.js and React.js.",
+        "Optimized website performance and ensured cross-device compatibility across desktop, tablet, and mobile platforms.",
+        "Applied modern front-end development practices to deliver an engaging user experience."
+      ],
+      skills: "HTML, React.js, +3 skills"
+    }
+  ];
+
   return (
     <div 
       className="text-[#edd4c2] font-sans antialiased min-h-screen selection:bg-cyan-500 selection:text-black"
@@ -19,7 +66,8 @@ export default function Home() {
           <nav className="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-white">
             <a href="#home" className="text-[#00abf0] hover:text-[#00efff] transition-colors">Home</a>
             <a href="#about" className="hover:text-[#00abf0] transition-colors">About</a>
-            <a href="#education" className="hover:text-[#00abf0] transition-colors">Education</a>
+            <a href="#education" className="hover:text-[#00abf0] transition-colors">Journey</a>
+            <a href="#projects" className="hover:text-[#00abf0] transition-colors">Projects</a>
             <a href="#skills" className="hover:text-[#00abf0] transition-colors">Skills</a>
             <a href="#services" className="hover:text-[#00abf0] transition-colors">Services</a>
             <a href="#contact" className="hover:text-[#00abf0] transition-colors">Contact</a>
@@ -46,23 +94,23 @@ export default function Home() {
               A Mathematics graduate with strong technical skills in Artificial Intelligence, Data Analytics, and SEO. Passionate about turning complex datasets and mathematical concepts into smart, automated systems and impactful data-driven web solutions.
             </p>
             
-            {/* SOCIAL LINKS (UPDATED) */}
+            {/* SOCIAL LINKS */}
             <div className="flex space-x-4 pt-4">
                <a
-                  href="mailto:nimrafarooqi46@gmail.com"
-                  className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0]"
-                  title="Email Me"
+                href="mailto:nimrafarooqi46@gmail.com"
+                className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0]"
+                title="Email Me"
                >
                   <i className="fas fa-envelope text-lg"></i>
                </a>
                <a
-                  href="https://www.linkedin.com/in/nimra-farooqi-3676ba26b/"
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 bg-[#081b29]/50 backdrop-blur-sm"
-                  title="LinkedIn Profile"
+                href="https://www.linkedin.com/in/nimra-farooqi-3676ba26b/"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-12 h-12 rounded-full border border-[#00abf0] flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300 bg-[#081b29]/50 backdrop-blur-sm"
+                title="LinkedIn Profile"
               >
-                  <i className="fab fa-linkedin-in text-lg"></i>
+                <i className="fab fa-linkedin-in text-lg"></i>
               </a>
               <a 
                 href="https://github.com/Nimracyber" 
@@ -165,8 +213,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PROJECTS SECTION */}
+      <section id="projects" className="py-24 bg-[#112e42]/60 backdrop-blur-sm px-6 border-t border-b border-[#00abf0]/20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-extrabold text-center text-white mb-16 drop-shadow-md">My <span className="text-[#00abf0]">Projects</span></h2>
+          <div className="grid gap-8">
+            {projects.map((project, index) => (
+              <div 
+                key={index} 
+                className="p-8 bg-[#081b29]/80 backdrop-blur-md rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)] transition-all duration-300"
+              >
+                <h3 className="text-2xl font-bold mb-4 text-[#00abf0]">
+                  {project.title}
+                </h3>
+                <ul className="list-disc list-inside space-y-2 text-[#edd4c2]/90 mb-6">
+                  {project.description.map((point, idx) => (
+                    <li key={idx} className="text-sm leading-relaxed font-medium">{point}</li>
+                  ))}
+                </ul>
+                <p className="text-sm font-medium text-gray-300">
+                  <span className="font-semibold text-white">Skills:</span> {project.skills}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* TECHNICAL SKILLS GRID */}
-      <section id="skills" className="py-24 bg-[#112e42]/60 backdrop-blur-sm px-6 border-t border-[#00abf0]/20">
+      <section id="skills" className="py-24 px-6 max-w-6xl mx-auto">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-extrabold text-center text-white mb-16 drop-shadow-md">Technical <span className="text-[#00abf0]">Skills</span></h2>
           
@@ -212,30 +287,32 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section id="services" className="py-24 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-white mb-16 drop-shadow-md">Our <span className="text-[#00abf0]">Services</span></h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-robot"></i></div>
-            <h3 className="text-2xl font-bold mb-3 text-white">AI & Python Solutions</h3>
-            <p className="text-gray-300 text-sm leading-relaxed font-medium">
-              Building intelligent computer vision solutions and custom automated models engineered with robust python backend frameworks.
-            </p>
-          </div>
-          <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-chart-line"></i></div>
-            <h3 className="text-2xl font-bold mb-3 text-white">Data Analytics</h3>
-            <p className="text-gray-300 text-sm leading-relaxed font-medium">
-              Extracting core statistical insights and engineering data-driven platforms natively grounded in complex mathematical logical theories.
-            </p>
-          </div>
-          <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
-            <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-globe"></i></div>
-            <h3 className="text-2xl font-bold mb-3 text-white">Technical SEO</h3>
-            <p className="text-gray-300 text-sm leading-relaxed font-medium">
-              Optimizing structural configurations footprint, code minification setups, and handling organic ranking algorithms seamlessly.
-            </p>
+      <section id="services" className="py-24 bg-[#112e42]/60 backdrop-blur-sm px-6 border-t border-[#00abf0]/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-extrabold text-center text-white mb-16 drop-shadow-md">Our <span className="text-[#00abf0]">Services</span></h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
+              <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-robot"></i></div>
+              <h3 className="text-2xl font-bold mb-3 text-white">AI & Python Solutions</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-medium">
+                Building intelligent computer vision solutions and custom automated models engineered with robust python backend frameworks.
+              </p>
+            </div>
+            <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
+              <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-chart-line"></i></div>
+              <h3 className="text-2xl font-bold mb-3 text-white">Data Analytics</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-medium">
+                Extracting core statistical insights and engineering data-driven platforms natively grounded in complex mathematical logical theories.
+              </p>
+            </div>
+            <div className="bg-[#112e42]/80 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:-translate-y-2 transition-transform duration-300 hover:border-[#00efff] hover:shadow-[0_0_25px_rgba(0,171,240,0.4)]">
+              <div className="text-[#00abf0] text-3xl mb-4"><i className="fas fa-globe"></i></div>
+              <h3 className="text-2xl font-bold mb-3 text-white">Technical SEO</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-medium">
+                Optimizing structural configurations footprint, code minification setups, and handling organic ranking algorithms seamlessly.
+              </p>
+            </div>
           </div>
         </div>
       </section>
